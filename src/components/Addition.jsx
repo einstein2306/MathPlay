@@ -56,7 +56,7 @@ export default function Addition(){
         return (
         <>
             <div className='container'>
-                <div className="pcont text-center mt-5 shadow shadow-sm rounded">
+                <div className="pcont text-center mt-5 shadow shadow-sm rounded border ">
                     <div id="heading">Addition</div>
                     <hr />
                     <div id='problem' className={state.incorrect ? "incorrect" : ""}>{state.num1} + {state.num2}</div>
