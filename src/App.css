@@ -1,0 +1,46 @@
+.incorrect{
+    color:red;
+}
+body{
+    font-family: cursive;
+}
+
+#problem{
+    font-size: 60px;
+    font-weight: 500;
+}
+#score{
+    font-size: 30px;
+}
+#heading{
+    font-weight: 900;
+    font-size: 50px;
+}
+.navbar-nav{
+    font-size:17px;
+}
+.winner{
+    font-size:60px;
+    font-weight: 700;
+    margin-top:17%;
+}
+
+.pcont{
+    background-color:black;
+    color:white;
+}
+
+
+hr{
+    border:none;
+    height:0.099rem;
+    opacity: 1;
+    background-color:white;
+}
+
+.nav-active{
+    border-bottom:2px solid white;
+    display:inline-block;
+    color:white !important;
+}
+
