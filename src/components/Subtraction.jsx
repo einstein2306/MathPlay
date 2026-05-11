@@ -55,7 +55,6 @@ export default function Subtraction(){
                 <div className='container'>
                     <div className="pcont text-center ">
                         <div id="heading">Subtraction</div>
-                       
                         <div id='problem' className={state.incorrect ? "incorrect" : ""}>{state.num1} - {state.num2}</div>
                         <div className="input-group w-50 mx-auto">
                             <input onChange={InputUpdate} className="form-control form-control-sm shadow-none"  autoFocus value={state.response} />
