@@ -2,44 +2,69 @@
     color:red;
 }
 body{
-    font-family: cursive;
+    min-height: 100vh;
+    background-image: url('./assets/Abackground.jpeg');
+    background-size: cover;
 }
 
 #problem{
     font-size: 60px;
     font-weight: 500;
 }
+
 #score{
     font-size: 30px;
 }
 #heading{
     font-weight: 900;
     font-size: 50px;
-}
+    border-bottom: 2px solid white;
+    display: inline-block;
+    margin-bottom:25px;
+
+  
+};
 .navbar-nav{
     font-size:17px;
 }
 .winner{
     font-size:60px;
     font-weight: 700;
-    margin-top:17%;
+    font-family: cursive;
+    animation-name:slideUp;
+    animation-duration:1s;
+    animation-fill-mode: forwards;
+    background-color: transparent;
 }
 
 .pcont{
-    background-color:whitesmoke;
+    background-color:transparent;
+    color:white;
+    animation-name:slideUp;
+    animation-duration:1s;
+    animation-fill-mode: forwards;
+ 
 }
 
-
-hr{
-    border:none;
-    height:0.099rem;
-    opacity: 1;
-    background-color:black;
+@keyframes slideUp{
+    0%{
+        margin-top:15%;
+        opacity: 0;
+    }
+    100%{
+        margin-top:8%;
+        opacity:1;
+    }
 }
+
 
 .nav-active{
     border-bottom:2px solid white;
     display:inline-block;
     color:white !important;
+}
+
+nav{
+    font-family: cursive;
 }
 

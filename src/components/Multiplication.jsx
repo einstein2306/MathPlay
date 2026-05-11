@@ -46,7 +46,7 @@ export default function Multiplication(){
        if(state.score >= 10){
         return(
             <div>
-                <div className="winner container bg-dark text-white text-center  rounded w-75 ">You Win</div>
+                <div className="winner container  text-white text-center  rounded w-75 ">You Win!</div>
             </div>
 
         );
@@ -55,9 +55,9 @@ export default function Multiplication(){
         return (
             <>
                 <div className='container'>
-                    <div className="pcont text-center mt-5 shadow shadow-sm rounded">
+                    <div className="pcont text-center">
                         <div id="heading">Multiplication</div>
-                        <hr />
+                        
                         <div id='problem' className={state.incorrect ? "incorrect" : ""}>{state.num1} * {state.num2}</div>
                         <div className="input-group w-50 mx-auto">
                             <input onChange={InputUpdate} className="form-control form-control-sm shadow-none"  autoFocus value={state.response} />
