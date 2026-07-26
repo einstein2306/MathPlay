@@ -12,7 +12,7 @@ function App() {
 
   return (
     <div> 
-      <nav className='navbar navbar-expand-lg navbar-dark bg-dark text-white'>
+      <nav className='navbar navbar-expand-lg shadow shadow-sm'>
         <div className='container-fluid'>
           <NavLink className='navbar-brand'  to ='#'>
             Math Play

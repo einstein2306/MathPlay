@@ -45,7 +45,7 @@ export default function Subtraction(){
     if(state.score >= 10){
         return(
             <div>
-                <div className="winner container  text-white text-center  rounded w-75 ">You Win!</div>
+                <div className="winner container text-center  rounded w-75 ">You Win!</div>
             </div>
 
         );
@@ -54,7 +54,7 @@ export default function Subtraction(){
             <>
                 <div className='container'>
                     <div className="pcont text-center ">
-                        <div id="heading">Subtraction</div>
+                        <div id="heading" className="bg-dark text-white d-inline px-5 rounded">Subtraction</div>
                         <div id='problem' className={state.incorrect ? "incorrect" : ""}>{state.num1} - {state.num2}</div>
                         <div className="input-group w-50 mx-auto">
                             <input onChange={InputUpdate} className="form-control form-control-sm shadow-none"  value={state.response} />

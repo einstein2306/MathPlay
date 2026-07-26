@@ -3,7 +3,7 @@
 }
 body{
     min-height: 100vh;
-    background-image: url('./assets/Abackground.jpeg');
+    background-color:aliceblue;
     background-size: cover;
 }
 
@@ -17,14 +17,12 @@ body{
 }
 #heading{
     font-weight: 900;
-    font-size: 50px;
-    border-bottom: 2px solid white;
-    display: inline-block;
+    font-size: 27px;
     margin-bottom:25px;
  
 }
 .navbar-nav{
-    font-size:17px;
+    font-size:15px;
 }
 .winner{
     font-size:60px;
@@ -38,7 +36,6 @@ body{
 
 .pcont{
     background-color:transparent;
-    color:white;
     animation-name:slideUp;
     animation-duration:1s;
     animation-fill-mode: forwards;
@@ -58,9 +55,9 @@ body{
 
 
 .nav-active{
-    border-bottom:2px solid white;
+    border-bottom:2px solid black;
     display:inline-block;
-    color:white !important;
+    color:black !important;
 }
 
 
