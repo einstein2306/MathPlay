@@ -18,6 +18,22 @@ export default function Subtraction(){
        }
    
        function CheckData(){
+            if(state.response === ""){
+                const alertContainer = document.querySelector(".a-mesg");
+                const alertMessage = document.createElement("div");
+                alertMessage.setAttribute("role","alert");
+                alertMessage.classList.add("alert","alert-warning","alert-dismissible","fade","show");
+                alertMessage.textContent = "Please enter valid Input..";
+
+                // Close button creation...
+                const button = document.createElement("button");
+                button.classList.add("btn-close","float-end");
+                button.setAttribute("data-bs-dismiss","alert");
+
+                alertMessage.append(button);
+                alertContainer.append(alertMessage);
+                return; 
+            }
    
            const answer = parseInt(state.response);
            if(answer === state.num1 - state.num2){
@@ -54,6 +70,11 @@ export default function Subtraction(){
             <>
                 <div className='container'>
                     <div className="pcont text-center ">
+                        <div className="row">
+                            <div className="col-10 col-md-6 mx-auto">
+                                <div className="a-mesg"></div>
+                            </div>
+                         </div>
                         <div id="heading" className="bg-dark text-white d-inline px-5 rounded">Subtraction</div>
                         <div id='problem' className={state.incorrect ? "incorrect" : ""}>{state.num1} - {state.num2}</div>
                         <div className="input-group w-50 mx-auto">
