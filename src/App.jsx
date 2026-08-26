@@ -2,8 +2,6 @@ import Addition from './components/Addition.jsx'
 import Subtraction from './components/Subtraction.jsx'
 import Multiplication from './components/Multiplication.jsx'
 import {Routes, Route, NavLink} from 'react-router-dom'
-import 'bootstrap/dist/css/bootstrap.min.css'
-import 'bootstrap/dist/js/bootstrap.bundle.min.js'
 import './App.css'
 
 

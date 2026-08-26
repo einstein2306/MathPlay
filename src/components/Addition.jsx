@@ -23,6 +23,7 @@ export default function Addition(){
 
         if(state.response === ""){
             const alertContainer = document.querySelector(".a-mesg");
+            alertContainer.replaceChildren();
             const alertMessage = document.createElement("div");
             alertMessage.setAttribute("role","alert");
             alertMessage.classList.add("alert","alert-warning","alert-dismissible","fade","show");
